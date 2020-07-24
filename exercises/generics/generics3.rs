@@ -17,8 +17,10 @@ pub struct ReportCard {
 
 impl ReportCard {
     pub fn print(&self) -> String {
-        format!("{} ({}) - achieved a grade of {}",
-            &self.student_name, &self.student_age, &self.grade)
+        format!(
+            "{} ({}) - achieved a grade of {}",
+            &self.student_name, &self.student_age, &self.grade
+        )
     }
 }
 
@@ -33,7 +35,10 @@ mod tests {
             student_name: "Tom Wriggle".to_string(),
             student_age: 12,
         };
-        assert_eq!(report_card.print(), "Tom Wriggle (12) - achieved a grade of 2.1");
+        assert_eq!(
+            report_card.print(),
+            "Tom Wriggle (12) - achieved a grade of 2.1"
+        );
     }
 
     #[test]
@@ -44,6 +49,9 @@ mod tests {
             student_name: "Gary Plotter".to_string(),
             student_age: 11,
         };
-        assert_eq!(report_card.print(), "Gary Plotter (11) - achieved a grade of A+");
+        assert_eq!(
+            report_card.print(),
+            "Gary Plotter (11) - achieved a grade of A+"
+        );
     }
 }
