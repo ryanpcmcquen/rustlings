@@ -18,6 +18,18 @@ trait AppendBar {
 
 //TODO: Add your code here
 
+impl AppendBar for Vec<String> {
+    fn append_bar(self) -> Vec<String> {
+        self.iter().map(|s| [s, "Bar"].join("")).collect()
+    }
+}
+
+impl AppendBar for String {
+    fn append_bar(self) -> String {
+        [self, "Bar".to_string()].join("")
+    }
+}
+
 #[cfg(test)]
 mod tests {
     use super::*;
