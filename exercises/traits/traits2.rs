@@ -10,8 +10,6 @@
 // No boiler plate code this time,
 // you can do this!
 
-// I AM NOT DONE
-
 trait AppendBar {
     fn append_bar(self) -> Self;
 }
@@ -19,14 +17,17 @@ trait AppendBar {
 //TODO: Add your code here
 
 impl AppendBar for Vec<String> {
-    fn append_bar(self) -> Vec<String> {
-        self.iter().map(|s| [s, "Bar"].join("")).collect()
+    fn append_bar(mut self) -> Vec<String> {
+        // self.iter().map(|s| [s, "Bar"].join("")).collect()
+        // self.push("Bar".to_string())
+        self.push("Bar".to_string());
+        return self;
     }
 }
 
 impl AppendBar for String {
     fn append_bar(self) -> String {
-        [self, "Bar".to_string()].join("")
+        return [self, "Bar".to_string()].join("");
     }
 }
 
