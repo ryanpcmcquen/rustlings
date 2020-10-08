@@ -36,7 +36,21 @@ impl Default for Person {
 // I AM NOT DONE
 
 impl From<&str> for Person {
-    fn from(s: &str) -> Person {}
+    fn from(s: &str) -> Person {
+        if s.is_empty() {
+            Person::default()
+        } else {
+            let mut split_str = s.split(",");
+            Person {
+                name: String::from(split_str.next().unwrap()),
+                age: match split_str.next() {
+                    Ok(output) => output.unwrap().parse::<usize>().unwrap(),
+                    None => Person::default().age,
+                    Err() => Person::default().age.unwrap(),
+                },
+            }
+        }
+    }
 }
 
 fn main() {
