@@ -6,4 +6,7 @@ fn main() {
     println!("Number {}", number);
     let number = 3;
     println!("Number {}", number);
+    println!("Number plus two is : {}", number + 2);
+    let number = "T-H-R-E-E";
+    println!("Spell a Number : {}", number);
 }

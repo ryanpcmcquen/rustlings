@@ -454,11 +454,148 @@
         "code",
         "content"
       ]
+    },
+    {
+      "login": "uce",
+      "name": "Ufuk Celebi",
+      "avatar_url": "https://avatars3.githubusercontent.com/u/1756620?v=4",
+      "profile": "https://github.com/uce",
+      "contributions": [
+        "code"
+      ]
+    },
+    {
+      "login": "lebedevsergey",
+      "name": "lebedevsergey",
+      "avatar_url": "https://avatars2.githubusercontent.com/u/7325764?v=4",
+      "profile": "https://github.com/lebedevsergey",
+      "contributions": [
+        "doc"
+      ]
+    },
+    {
+      "login": "avrong",
+      "name": "Aleksei Trifonov",
+      "avatar_url": "https://avatars2.githubusercontent.com/u/6342851?v=4",
+      "profile": "https://github.com/avrong",
+      "contributions": [
+        "content"
+      ]
+    },
+    {
+      "login": "Darrenmeehan",
+      "name": "Darren Meehan",
+      "avatar_url": "https://avatars2.githubusercontent.com/u/411136?v=4",
+      "profile": "https://drn.ie",
+      "contributions": [
+        "content"
+      ]
+    },
+    {
+      "login": "jihchi",
+      "name": "Jihchi Lee",
+      "avatar_url": "https://avatars1.githubusercontent.com/u/87983?v=4",
+      "profile": "https://github.com/jihchi",
+      "contributions": [
+        "content"
+      ]
+    },
+    {
+      "login": "bertonha",
+      "name": "Christofer Bertonha",
+      "avatar_url": "https://avatars3.githubusercontent.com/u/1225902?v=4",
+      "profile": "https://github.com/bertonha",
+      "contributions": [
+        "content"
+      ]
+    },
+    {
+      "login": "apatniv",
+      "name": "Vivek Bharath Akupatni",
+      "avatar_url": "https://avatars2.githubusercontent.com/u/22565917?v=4",
+      "profile": "https://github.com/apatniv",
+      "contributions": [
+        "code",
+        "test"
+      ]
+    },
+    {
+      "login": "DiD92",
+      "name": "Dídac Sementé Fernández",
+      "avatar_url": "https://avatars3.githubusercontent.com/u/6002416?v=4",
+      "profile": "https://github.com/DiD92",
+      "contributions": [
+        "code",
+        "content"
+      ]
+    },
+    {
+      "login": "wrobstory",
+      "name": "Rob Story",
+      "avatar_url": "https://avatars3.githubusercontent.com/u/2601457?v=4",
+      "profile": "https://github.com/wrobstory",
+      "contributions": [
+        "code"
+      ]
+    },
+    {
+      "login": "siobhanjacobson",
+      "name": "Siobhan Jacobson",
+      "avatar_url": "https://avatars2.githubusercontent.com/u/28983835?v=4",
+      "profile": "https://github.com/siobhanjacobson",
+      "contributions": [
+        "code"
+      ]
+    },
+    {
+      "login": "EvanCarroll",
+      "name": "Evan Carroll",
+      "avatar_url": "https://avatars2.githubusercontent.com/u/19922?v=4",
+      "profile": "https://www.linkedin.com/in/evancarroll/",
+      "contributions": [
+        "content"
+      ]
+    },
+    {
+      "login": "jmahmood",
+      "name": "Jawaad Mahmood",
+      "avatar_url": "https://avatars3.githubusercontent.com/u/95606?v=4",
+      "profile": "http://www.jawaadmahmood.com",
+      "contributions": [
+        "content"
+      ]
+    },
+    {
+      "login": "GaurangTandon",
+      "name": "Gaurang Tandon",
+      "avatar_url": "https://avatars1.githubusercontent.com/u/6308683?v=4",
+      "profile": "https://github.com/GaurangTandon",
+      "contributions": [
+        "content"
+      ]
+    },
+    {
+      "login": "dev-cyprium",
+      "name": "Stefan Kupresak",
+      "avatar_url": "https://avatars1.githubusercontent.com/u/6002628?v=4",
+      "profile": "https://github.com/dev-cyprium",
+      "contributions": [
+        "content"
+      ]
+    },
+    {
+      "login": "greg-el",
+      "name": "Greg Leonard",
+      "avatar_url": "https://avatars3.githubusercontent.com/u/45019882?v=4",
+      "profile": "https://github.com/greg-el",
+      "contributions": [
+        "content"
+      ]
     }
   ],
   "contributorsPerLine": 8,
   "projectName": "rustlings",
-  "projectOwner": "fmoko",
+  "projectOwner": "rust-lang",
   "repoType": "github",
   "repoHost": "https://github.com",
   "skipCi": true

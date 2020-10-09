@@ -41,13 +41,31 @@ impl From<&str> for Person {
             Person::default()
         } else {
             let mut split_str = s.split(",");
+
+            let next = split_str.next();
+            let mut name = Person::default().name;
+
+            if next.is_some() && !next.unwrap().is_empty() {
+                name = String::from(next.unwrap());
+            } else {
+                return Person::default();
+            }
+
+            let next = split_str.next();
+            let mut age = Person::default().age;
+
+            if next.is_some() {
+                match next.unwrap().parse::<usize>() {
+                    Ok(output) => age = output,
+                    Err(_) => return Person::default(),
+                }
+            } else {
+                return Person::default();
+            }
+
             Person {
-                name: String::from(split_str.next().unwrap()),
-                age: match split_str.next() {
-                    Ok(output) => output.unwrap().parse::<usize>().unwrap(),
-                    None => Person::default().age,
-                    Err() => Person::default().age.unwrap(),
-                },
+                name: name,
+                age: age,
             }
         }
     }
@@ -88,7 +106,7 @@ mod tests {
     }
     #[test]
     fn test_bad_age() {
-        // Test that "Mark.twenty" will return the default person due to an error in parsing age
+        // Test that "Mark,twenty" will return the default person due to an error in parsing age
         let p = Person::from("Mark,twenty");
         assert_eq!(p.name, "John");
         assert_eq!(p.age, 30);
